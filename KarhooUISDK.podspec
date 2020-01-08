@@ -14,8 +14,11 @@ Pod::Spec.new do |s|
   s.platform              = :ios, '10.0'
   s.ios.deployment_target = '10.0'
   s.static_framework      = true
-  s.requires_arc          = false
+  s.requires_arc          = true
 
-  s.dependency      'KarhooSDK'
+  s.dependency    'KarhooSDK'
+  s.dependency    'FloatingPanel'
+  s.dependency    'BraintreeDropIn'
+  s.dependency    'Braintree/PaymentFlow'
 
 end
